@@ -3,7 +3,9 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Alert, Spinner } from 'react-bootstrap';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RickAndMorty from './rickMorty';
 
+/*
 function App() {
   const [pokemones, setPokemones] = useState([]);
   const [cargando, setCargando] = useState(true);
@@ -67,6 +69,20 @@ function App() {
         </Row>
       )}
     </Container>
+  );
+}
+
+export default App;
+
+*/
+
+//Tarea N°8 - Rick and Morty API
+
+function App() {
+  return (
+    <div className="bg-dark min-vh-100 py-1">
+      <RickAndMorty />
+    </div>
   );
 }
 
