@@ -5,6 +5,14 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RickAndMorty from './rickMorty';
 
+
+import Menu from "./Menu";
+import Slider from "./Slider";
+import Pilares from "./Pilares";
+import Footer from "./Footer";
+
+
+
 /*
 function App() {
   const [pokemones, setPokemones] = useState([]);
@@ -77,12 +85,31 @@ export default App;
 */
 
 //Tarea N°8 - Rick and Morty API
-
+/*
 function App() {
   return (
     <div className="bg-dark min-vh-100 py-1">
       <RickAndMorty />
     </div>
+  );
+}
+
+export default App;
+
+*/
+// TAREA N°9
+
+
+function App() {
+  return (
+    <>
+      <Menu />
+      <Slider />
+      <div className="container my-5 contenido-principal"></div>
+      <Pilares />
+      <div/>
+      <Footer />
+    </>
   );
 }
 

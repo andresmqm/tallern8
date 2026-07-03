@@ -15,7 +15,7 @@ function RickAndMorty() {
             setError(null);
         } catch (err) {
             console.error("Error al obtener los personajes:", err);
-            setError("No se pudieron cargar los personajes. Inténtalo de nuevo más tarde.");
+            setError("No se pudieron cargar los personajes");
         } finally {
             setCargando(false);
         }
@@ -29,7 +29,7 @@ function RickAndMorty() {
         return (
             <Container classname="text-center my-5">
                 <Spinner animation="border" variant="warning" />
-                <p classname="mt-2 text-white">Cargando personajes...</p>
+                <p classname="mt-2 text-white">Cargando...</p>
             </Container>
         );
     }
